@@ -1,0 +1,75 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+.fila-herramienta {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-1);
+}
+
+.fila-herramienta__enlace {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 2.4rem minmax(0, 1fr);
+  column-gap: var(--espacio-3);
+  align-items: start;
+  padding: var(--espacio-3) var(--espacio-2);
+  border-radius: var(--radio-control);
+  text-decoration: none;
+}
+
+.fila-herramienta__nombre {
+  font-size: var(--texto-grande);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.fila-herramienta__descripcion {
+  grid-column: 2;
+  color: var(--color-texto-secundario);
+  font-size: var(--texto-pequeno);
+}
+
+/* La hoja que sale del remache al señalar una herramienta. */
+.fila-herramienta__enlace::after {
+  content: "";
+  position: absolute;
+  left: var(--espacio-2);
+  right: var(--espacio-2);
+  bottom: 0;
+  height: 0.3rem;
+  background: var(--color-laton);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 2.4rem) 100%, 0 100%);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--duracion-media) var(--curva-despliegue);
+}
+
+.fila-herramienta__enlace:hover::after,
+.fila-herramienta__enlace:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.fila-herramienta__favorito {
+  color: var(--color-texto-secundario);
+}
+
+.fila-herramienta__favorito[aria-pressed="true"] {
+  color: var(--color-laton);
+}
+
+@media (min-width: 64em) {
+  .fila-herramienta__enlace {
+    grid-template-columns: 2.4rem 28rem minmax(0, 1fr);
+    align-items: baseline;
+  }
+
+  .fila-herramienta__enlace .icono {
+    align-self: center;
+  }
+
+  .fila-herramienta__descripcion {
+    grid-column: 3;
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "navaja",
+  "version": "0.1.0",
+  "description": "Herramientas para desarrollo y diseño que funcionan en tu navegador, sin cuentas y sin enviar tus datos.",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "desarrollo": "node guiones/servir.js codigo",
+    "test": "node --test --experimental-test-coverage codigo/",
+    "construir": "node guiones/construir.js",
+    "publicacion": "node guiones/servir.js publicacion",
+    "pruebas:e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardoescalantejauregui/navaja.git"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0"
+  }
+}

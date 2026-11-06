@@ -1,0 +1,140 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+@font-face {
+  font-family: "Big Shoulders Display";
+  src: url("/tipografias/big-shoulders-display.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  src: url("/tipografias/atkinson-hyperlegible-next.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+
+  /* Acero claro */
+  --color-fondo: #e9eceb;
+  --color-superficie: #f7f8f7;
+  --color-superficie-hundida: #dde2e1;
+  --color-texto: #18222b;
+  --color-texto-secundario: #46525c;
+  --color-borde: #c3cacb;
+  --color-borde-control: #6f7b81;
+  --color-primario: #5a3820;
+  --color-primario-activo: #472b18;
+  --color-primario-texto: #fbf7f0;
+  --color-laton: #80590b;
+  --color-foco: #80590b;
+  --color-exito: #1c6535;
+  --color-aviso: #805300;
+  --color-error: #a8211a;
+  --color-error-fondo: #f8e4e1;
+  --color-resultado-fondo: #1b2530;
+  --color-resultado-texto: #e8ecee;
+  --color-resultado-secundario: #aebac3;
+  --color-logotipo-hoja: #6f7c83;
+
+  /* Materiales de la navaja: no cambian mucho con el tema */
+  --color-cacha: #5a3820;
+  --color-cacha-texto: #f6efe4;
+  --color-remache: #d6a941;
+  --color-hoja: #fbfcfb;
+  --color-hoja-bisel: #d5dbdc;
+  --color-hoja-texto: #18222b;
+  --color-hoja-ayuda: #46525c;
+  --color-filo: #6f7b81;
+
+  --tipografia-titulos: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --tipografia-texto: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+  --tipografia-codigo: ui-monospace, "Cascadia Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  --texto-pequeno: 1.4rem;
+  --texto-normal: 1.7rem;
+  --texto-grande: 2rem;
+  --titulo-seccion: 2.8rem;
+  --titulo-pagina: clamp(4.4rem, 8vw, 7.2rem);
+  --titulo-portada: clamp(5rem, 7.5vw, 9.6rem);
+
+  --espacio-1: 0.4rem;
+  --espacio-2: 0.8rem;
+  --espacio-3: 1.2rem;
+  --espacio-4: 1.6rem;
+  --espacio-5: 2.4rem;
+  --espacio-6: 3.2rem;
+  --espacio-7: 4.8rem;
+  --espacio-8: 7.2rem;
+
+  --ancho-maximo: 128rem;
+  --margen-lateral: clamp(1.6rem, 4vw, 4.8rem);
+  --objetivo-tactil: 4.4rem;
+
+  --radio-control: 0.4rem;
+  --radio-panel: 0.8rem;
+  --radio-cacha: 1.8rem;
+
+  --sombra-flotante: 0 0.8rem 2.4rem rgb(24 34 43 / 0.24);
+
+  --duracion-breve: 140ms;
+  --duracion-media: 220ms;
+  --curva-despliegue: cubic-bezier(0.2, 0.9, 0.25, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema="claro"]) {
+    color-scheme: dark;
+    --color-fondo: #141b24;
+    --color-superficie: #1c2631;
+    --color-superficie-hundida: #0f151c;
+    --color-texto: #e8ecee;
+    --color-texto-secundario: #aebac3;
+    --color-borde: #33414e;
+    --color-borde-control: #7a8894;
+    --color-primario: #dcb153;
+    --color-primario-activo: #e8c470;
+    --color-primario-texto: #1a1408;
+    --color-laton: #e3ba5f;
+    --color-foco: #e3ba5f;
+    --color-exito: #79d198;
+    --color-aviso: #e8b75a;
+    --color-error: #ff9a90;
+    --color-error-fondo: #3a1d1c;
+    --color-resultado-fondo: #0f151c;
+    --color-logotipo-hoja: #d5dbdc;
+    --color-cacha: #6e4728;
+    --color-hoja: #dfe4e6;
+    --color-hoja-bisel: #bcc5c9;
+    --color-filo: #7a8894;
+    --sombra-flotante: 0 0.8rem 2.4rem rgb(0 0 0 / 0.5);
+  }
+}
+
+:root[data-tema="oscuro"] {
+  color-scheme: dark;
+  --color-fondo: #141b24;
+  --color-superficie: #1c2631;
+  --color-superficie-hundida: #0f151c;
+  --color-texto: #e8ecee;
+  --color-texto-secundario: #aebac3;
+  --color-borde: #33414e;
+  --color-borde-control: #7a8894;
+  --color-primario: #dcb153;
+  --color-primario-activo: #e8c470;
+  --color-primario-texto: #1a1408;
+  --color-laton: #e3ba5f;
+  --color-foco: #e3ba5f;
+  --color-exito: #79d198;
+  --color-aviso: #e8b75a;
+  --color-error: #ff9a90;
+  --color-error-fondo: #3a1d1c;
+  --color-resultado-fondo: #0f151c;
+  --color-logotipo-hoja: #d5dbdc;
+  --color-cacha: #6e4728;
+  --color-hoja: #dfe4e6;
+  --color-hoja-bisel: #bcc5c9;
+  --color-filo: #7a8894;
+  --sombra-flotante: 0 0.8rem 2.4rem rgb(0 0 0 / 0.5);
+}

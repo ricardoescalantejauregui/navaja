@@ -1,0 +1,51 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+.portada__presentacion {
+  padding-block: var(--espacio-2) var(--espacio-5);
+}
+
+.portada__titulo {
+  font-size: var(--titulo-portada);
+  line-height: 1;
+  margin-bottom: var(--espacio-4);
+}
+
+.portada__descripcion {
+  max-width: 62ch;
+  margin-bottom: var(--espacio-5);
+  color: var(--color-texto-secundario);
+  font-size: var(--texto-grande);
+  line-height: 1.4;
+}
+
+.portada__filtros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--espacio-4) var(--espacio-5);
+  margin-top: var(--espacio-5);
+}
+
+.portada__resultados {
+  color: var(--color-texto-secundario);
+  font-size: var(--texto-pequeno);
+  min-height: var(--objetivo-tactil);
+  display: flex;
+  align-items: center;
+}
+
+.portada__vacio {
+  max-width: 62ch;
+  padding-block: var(--espacio-6);
+}
+
+.portada__vacio-titulo {
+  font-size: var(--titulo-seccion);
+  margin-bottom: var(--espacio-2);
+  overflow-wrap: anywhere;
+}
+
+.portada__vacio-texto {
+  margin-bottom: var(--espacio-4);
+  color: var(--color-texto-secundario);
+}

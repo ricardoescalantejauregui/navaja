@@ -1,0 +1,90 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--tipografia-texto);
+  font-size: var(--texto-normal);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--tipografia-titulos);
+  font-weight: 800;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.3rem;
+}
+
+code,
+kbd,
+pre {
+  font-family: var(--tipografia-codigo);
+}
+
+:focus-visible {
+  outline: 0.3rem solid var(--color-foco);
+  outline-offset: 0.2rem;
+}
+
+h1:focus,
+main:focus {
+  outline: none;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.icono {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: none;
+}
+
+.icono__trazo {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icono__remache {
+  fill: var(--color-laton);
+}
+
+.icono--relleno .icono__trazo {
+  fill: currentcolor;
+}
+
+.logotipo {
+  width: 4.4rem;
+  height: 2.8rem;
+  flex: none;
+}
+
+.logotipo__hoja {
+  fill: var(--color-logotipo-hoja);
+}
+
+.logotipo__cacha {
+  fill: var(--color-cacha);
+}
+
+.logotipo__remache {
+  fill: var(--color-remache);
+}

@@ -1,0 +1,71 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+figure,
+fieldset,
+legend,
+blockquote,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  min-width: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
