@@ -1,0 +1,36 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+.cargador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 0.4rem;
+  overflow: hidden;
+  background: var(--color-superficie-hundida);
+}
+
+.cargador__hoja {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: var(--color-laton);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 1.6rem) 100%, 0 100%);
+  animation: cargador-avance 900ms ease-in-out infinite;
+}
+
+@keyframes cargador-avance {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(250%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cargador__hoja {
+    width: 100%;
+  }
+}

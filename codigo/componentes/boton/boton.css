@@ -1,0 +1,76 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-2);
+  min-height: var(--objetivo-tactil);
+  padding: var(--espacio-2) var(--espacio-3);
+  border: 1px solid var(--color-borde-control);
+  border-radius: var(--radio-control);
+  background: transparent;
+  color: var(--color-texto);
+  font-size: var(--texto-pequeno);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--duracion-breve);
+}
+
+.boton:hover:not(:disabled) {
+  background: var(--color-superficie-hundida);
+}
+
+.boton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.boton .icono {
+  width: 2rem;
+  height: 2rem;
+}
+
+.boton--primario {
+  background: var(--color-primario);
+  border-color: var(--color-primario);
+  color: var(--color-primario-texto);
+}
+
+.boton--primario:hover:not(:disabled) {
+  background: var(--color-primario-activo);
+}
+
+.boton--peligro {
+  background: var(--color-error);
+  border-color: var(--color-error);
+  color: var(--color-superficie);
+}
+
+.boton--peligro:hover:not(:disabled) {
+  background: var(--color-error);
+  filter: brightness(0.92);
+}
+
+.boton--sobre-resultado {
+  border-color: var(--color-resultado-secundario);
+  color: var(--color-resultado-texto);
+}
+
+.boton--sobre-resultado:hover:not(:disabled) {
+  background: rgb(255 255 255 / 0.1);
+}
+
+.boton--sobre-resultado:focus-visible {
+  outline-color: var(--color-remache);
+}
+
+.boton--solo-icono {
+  width: var(--objetivo-tactil);
+  padding: 0;
+  border-color: transparent;
+}
+
+.boton--solo-icono .icono {
+  width: 2.4rem;
+  height: 2.4rem;
+}

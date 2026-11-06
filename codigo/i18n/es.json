@@ -1,0 +1,388 @@
+{
+  "aplicacion": {
+    "nombre": "Navaja",
+    "lema": "herramientas para desarrollo y diseño",
+    "repositorio": "https://github.com/ricardoescalantejauregui/navaja"
+  },
+  "encabezado": {
+    "inicio": "Ir al inicio de Navaja",
+    "navegacion": "Secciones",
+    "favoritos": "Favoritos",
+    "recientes": "Recientes",
+    "buscar": "Buscar",
+    "tema": {
+      "claro": "Tema claro. Cambiar a oscuro",
+      "oscuro": "Tema oscuro. Cambiar a seguir el sistema",
+      "sistema": "Tema del sistema. Cambiar a claro"
+    }
+  },
+  "pie": {
+    "navegacion": "Información",
+    "acerca": "Acerca de",
+    "privacidad": "Privacidad",
+    "codigo": "Código fuente",
+    "borrar": "Borrar mis datos",
+    "promesa": "Todo se procesa en tu navegador."
+  },
+  "portada": {
+    "titulo": "¿Qué necesitas resolver?",
+    "descripcion": "Herramientas para desarrollo y diseño. Todo ocurre en tu navegador: tus datos no salen de tu equipo.",
+    "etiquetaBusqueda": "Buscar herramientas",
+    "ayudaBusqueda": "Prueba con json o qr",
+    "atajo": "Ctrl K",
+    "perfil": "Mostrar herramientas para",
+    "perfiles": {
+      "todos": "Todos",
+      "dev": "Desarrollo",
+      "uxui": "UX/UI",
+      "grafico": "Diseño gráfico"
+    },
+    "categorias": "Ir a una categoría",
+    "resultados": "{cantidad} herramientas",
+    "resultadoUno": "1 herramienta",
+    "sinResultados": "No encontramos herramientas para «{consulta}»",
+    "sinResultadosAyuda": "Revisa cómo está escrito o busca por lo que quieres hacer, como comprimir o decodificar.",
+    "sinPerfil": "Todavía no hay herramientas para este perfil.",
+    "verTodas": "Ver todas las herramientas",
+    "limpiarBusqueda": "Limpiar búsqueda"
+  },
+  "categorias": {
+    "formato": "Dar formato",
+    "codificacion": "Codificar y decodificar",
+    "tiempo": "Fechas y horarios",
+    "generacion": "Generar",
+    "color": "Color"
+  },
+  "favoritos": {
+    "agregar": "Agregar a favoritos",
+    "quitar": "Quitar de favoritos",
+    "agregarDe": "Agregar {nombre} a favoritos",
+    "quitarDe": "Quitar {nombre} de favoritos"
+  },
+  "marco": {
+    "volver": "Todas las herramientas",
+    "entrada": "Entrada",
+    "resultado": "Resultado",
+    "pegar": "Pegar",
+    "ejemplo": "Cargar ejemplo",
+    "abrirArchivo": "Abrir archivo",
+    "limpiar": "Limpiar",
+    "copiar": "Copiar",
+    "descargar": "Descargar",
+    "comoSeUsa": "Cómo se usa",
+    "copiado": "Copiado al portapapeles",
+    "descargado": "Descarga lista",
+    "errorCopiar": "No se pudo copiar. Selecciona el resultado y cópialo manualmente.",
+    "errorPegar": "No se pudo leer el portapapeles. Pega con Ctrl+V.",
+    "resultadoVacio": "El resultado aparecerá aquí.",
+    "procesando": "Procesando…",
+    "arrastrar": "Arrastra un archivo aquí o elige uno",
+    "elegirArchivo": "Elegir archivo",
+    "quitarArchivo": "Quitar archivo",
+    "archivoCargado": "{nombre} ({tamano})",
+    "archivoGrande": "El archivo supera el límite de 10 MB",
+    "soloImagenes": "El archivo no es una imagen compatible"
+  },
+  "dialogo": {
+    "cancelar": "Cancelar",
+    "borrar": "Borrar",
+    "borrarTitulo": "¿Borrar favoritos, recientes y preferencias?",
+    "borrarTexto": "Se eliminan de este navegador y no se pueden recuperar.",
+    "borrado": "Tus datos se borraron"
+  },
+  "aviso": {
+    "cerrar": "Cerrar aviso"
+  },
+  "paginas": {
+    "favoritos": {
+      "titulo": "Favoritos",
+      "descripcion": "Las herramientas que marcaste para tener a la mano.",
+      "vacio": "Aún no tienes favoritos. Marca la estrella de una herramienta para verla aquí.",
+      "privada": true
+    },
+    "recientes": {
+      "titulo": "Recientes",
+      "descripcion": "Las últimas herramientas que abriste en este navegador.",
+      "vacio": "Aún no has abierto ninguna herramienta.",
+      "privada": true
+    },
+    "acerca-de": {
+      "titulo": "Acerca de",
+      "descripcion": "Qué es Navaja y cómo está hecha.",
+      "parrafos": [
+        "Navaja reúne las utilidades que se usan a diario en desarrollo y diseño, en español y sin instalar nada.",
+        "Cada herramienta funciona dentro de tu navegador. No hay cuentas, anuncios ni servidores que reciban lo que escribes.",
+        "Navaja es software libre bajo la licencia GNU AGPL-3.0. Puedes revisar, usar y modificar su código, y quien publique una versión modificada debe compartir también su código."
+      ],
+      "enlaceCodigo": "Ver el código fuente en GitHub",
+      "enlaceLicencia": "Leer la licencia AGPL-3.0"
+    },
+    "privacidad": {
+      "titulo": "Privacidad",
+      "descripcion": "Lo que Navaja hace con tus datos.",
+      "parrafos": [
+        "Lo que escribes o cargas en una herramienta se procesa en tu navegador y no se envía a ningún servidor.",
+        "Navaja no usa cookies ni analítica que lea tu contenido.",
+        "En este navegador se guardan tus favoritos, tus recientes, tu tema y tu perfil. Puedes eliminarlos con «Borrar mis datos», al final de la página.",
+        "Las herramientas que manejan secretos, como el decodificador JWT, no guardan lo que escribes."
+      ]
+    },
+    "noEncontrada": {
+      "titulo": "Página no encontrada",
+      "descripcion": "Esta dirección no corresponde a ninguna herramienta.",
+      "enlace": "Buscar una herramienta"
+    }
+  },
+  "herramientas": {
+    "formateador-json": {
+      "nombre": "Formateador JSON",
+      "descripcion": "Da formato, valida o minifica datos JSON.",
+      "uso": [
+        "Pega tu JSON en la entrada y el resultado se actualiza mientras escribes.",
+        "Si hay un error, verás la línea y la columna donde está.",
+        "Por ejemplo, {\"a\":1} se convierte en un objeto con sangría y fácil de leer."
+      ],
+      "ejemplo": "{\"nombre\":\"Navaja\",\"herramientas\":14,\"local\":true,\"perfiles\":[\"dev\",\"uxui\"]}",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "formatear": "Dar formato", "minificar": "Minificar" },
+        "sangria": { "etiqueta": "Sangría", "2": "2 espacios", "4": "4 espacios", "tab": "Tabulador" }
+      },
+      "errores": {
+        "JSON_INVALIDO": "JSON no válido en la línea {linea}, columna {columna}",
+        "JSON_INVALIDO_SIN_POSICION": "JSON no válido. Revisa comas, comillas y llaves."
+      }
+    },
+    "vista-previa-markdown": {
+      "nombre": "Vista previa Markdown",
+      "descripcion": "Convierte Markdown en una vista previa y en HTML seguros.",
+      "uso": [
+        "Escribe o pega Markdown y mira el resultado al instante.",
+        "Admite títulos, listas, citas, bloques de código, negritas, cursivas y enlaces.",
+        "El HTML generado nunca incluye scripts: se construye a partir de una lista cerrada de elementos."
+      ],
+      "ejemplo": "# Notas de la versión\n\nEsta versión incluye **búsqueda** y [código abierto](https://github.com).\n\n- Tema claro y oscuro\n- Sin cuentas\n\n> Tus datos no salen de tu equipo.\n\n```\nnpm test\n```",
+      "opciones": {
+        "vista": { "etiqueta": "Mostrar", "previa": "Vista previa", "html": "HTML" }
+      }
+    },
+    "base64": {
+      "nombre": "Base64 de texto",
+      "descripcion": "Codifica y decodifica texto en Base64, con soporte para acentos y emojis.",
+      "uso": [
+        "Elige si quieres codificar o decodificar y escribe tu texto.",
+        "La variante URL cambia los signos + y / para usar el resultado en una dirección web.",
+        "Por ejemplo, «ñandú» se codifica como w7FhbmTDug==."
+      ],
+      "ejemplo": "ñandú: tus datos no salen de tu equipo",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "codificar": "Codificar", "decodificar": "Decodificar" },
+        "variante": { "etiqueta": "Variante", "estandar": "Estándar", "url": "Segura para URL" }
+      },
+      "errores": {
+        "BASE64_INVALIDO": "El texto no es Base64 válido. Revisa que no falten caracteres."
+      }
+    },
+    "base64-archivo": {
+      "nombre": "Base64 de imagen o archivo",
+      "descripcion": "Convierte un archivo en Data URI, o un Data URI en archivo.",
+      "uso": [
+        "Para codificar, carga un archivo y copia el Data URI resultante.",
+        "Para decodificar, pega un Data URI y descarga el archivo.",
+        "Si es una imagen, verás una vista previa."
+      ],
+      "ejemplo": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMTYiIGZpbGw9IiNDODk3MkUiLz48L3N2Zz4=",
+      "etiquetaEntrada": "Data URI",
+      "vistaPrevia": "Vista previa de la imagen",
+      "archivoSalida": "archivo-decodificado",
+      "resumen": "Tipo: {tipo}. Tamaño: {tamano}.",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "codificar": "Archivo a Data URI", "decodificar": "Data URI a archivo" }
+      },
+      "errores": {
+        "DATA_URI_INVALIDO": "El texto no es un Data URI en Base64. Debe empezar con data:tipo;base64,"
+      }
+    },
+    "codificador-url": {
+      "nombre": "Codificador de URL",
+      "descripcion": "Codifica y decodifica direcciones web y sus componentes.",
+      "uso": [
+        "Usa «Componente» para el valor de un parámetro: también codifica signos como & y =.",
+        "Usa «URL completa» para conservar la estructura de la dirección.",
+        "Por ejemplo, «café con leche» se codifica como caf%C3%A9%20con%20leche."
+      ],
+      "ejemplo": "https://navaja.dev/buscar?q=café con leche&orden=reciente",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "codificar": "Codificar", "decodificar": "Decodificar" },
+        "alcance": { "etiqueta": "Alcance", "componente": "Componente", "completa": "URL completa" }
+      },
+      "errores": {
+        "URL_INVALIDA": "El texto tiene una secuencia % que no se puede decodificar."
+      }
+    },
+    "escapar-cadenas": {
+      "nombre": "Escapar cadenas",
+      "descripcion": "Escapa y desescapa texto para HTML, JSON, JavaScript o URL.",
+      "uso": [
+        "Elige el formato de destino y si quieres escapar o desescapar.",
+        "Escapar y luego desescapar con el mismo formato devuelve el texto original.",
+        "Por ejemplo, en HTML el signo < se convierte en &lt;."
+      ],
+      "ejemplo": "<a href=\"/buscar\">Café & \"té\"</a>",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "escapar": "Escapar", "desescapar": "Desescapar" },
+        "formato": { "etiqueta": "Formato", "html": "HTML", "json": "JSON", "javascript": "JavaScript", "url": "URL" }
+      },
+      "errores": {
+        "ESCAPE_INVALIDO": "El texto tiene una secuencia que no se puede desescapar con este formato."
+      }
+    },
+    "jwt": {
+      "nombre": "Decodificador JWT",
+      "descripcion": "Muestra la cabecera, la carga y las fechas de un token JWT.",
+      "uso": [
+        "Pega un token para ver su contenido y sus fechas en tu zona horaria.",
+        "Esta herramienta decodifica el token, pero no verifica su firma.",
+        "Por seguridad, lo que escribes no se guarda."
+      ],
+      "ejemplo": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0IiwibmFtZSI6Ik5hdmFqYSIsImlhdCI6MTcwMDAwMDAwMCwiZXhwIjoxNzAwMDAzNjAwfQ.c2luLXZlcmlmaWNhcg",
+      "etiquetaCabecera": "Cabecera",
+      "etiquetaCarga": "Carga",
+      "etiquetaFechas": "Fechas",
+      "emitido": "Emitido",
+      "expira": "Expira",
+      "noAntes": "Válido desde",
+      "expirado": "Expirado",
+      "vigente": "Vigente",
+      "sinFirma": "La firma no se verifica.",
+      "errores": {
+        "JWT_SEGMENTOS": "Un JWT debe tener 3 partes separadas por puntos.",
+        "JWT_INVALIDO": "La cabecera o la carga del token no se pueden leer."
+      }
+    },
+    "gzip": {
+      "nombre": "Compresión GZip",
+      "descripcion": "Comprime texto con GZip y lo devuelve en Base64, o lo descomprime.",
+      "uso": [
+        "Elige si quieres comprimir o descomprimir y escribe tu contenido.",
+        "Al comprimir verás cuánto cambia el tamaño.",
+        "Para descomprimir, la entrada debe estar en Base64."
+      ],
+      "ejemplo": "Navaja comprime este texto dentro de tu navegador. Navaja comprime este texto dentro de tu navegador.",
+      "tamanos": "Antes: {antes}. Después: {despues}.",
+      "opciones": {
+        "accion": { "etiqueta": "Acción", "comprimir": "Comprimir", "descomprimir": "Descomprimir" }
+      },
+      "errores": {
+        "GZIP_INVALIDO": "La entrada no es GZip en Base64 válido.",
+        "GZIP_NO_DISPONIBLE": "Tu navegador no admite esta función."
+      }
+    },
+    "comprobador-certificado": {
+      "nombre": "Comprobador de certificado",
+      "descripcion": "Comprueba el formato de un certificado PEM y muestra su tamaño.",
+      "uso": [
+        "Pega un certificado que empiece con -----BEGIN CERTIFICATE-----.",
+        "La herramienta confirma que su estructura externa es válida y muestra su tamaño.",
+        "Por ahora no muestra el emisor ni las fechas del certificado."
+      ],
+      "ejemplo": "-----BEGIN CERTIFICATE-----\nMAkCAQECAQICAQM=\n-----END CERTIFICATE-----",
+      "valido": "Estructura DER válida.",
+      "tamano": "Tamaño: {tamano} bytes.",
+      "local": "Se procesó en tu navegador.",
+      "errores": {
+        "CERTIFICADO_INVALIDO": "El texto no es un certificado PEM válido."
+      }
+    },
+    "fecha-unix": {
+      "nombre": "Fecha y Unix timestamp",
+      "descripcion": "Convierte entre fechas, ISO 8601 y Unix timestamps.",
+      "uso": [
+        "Escribe un timestamp en segundos o milisegundos, o una fecha como 2026-11-06.",
+        "Verás la fecha en tu zona horaria, en UTC y en ISO 8601.",
+        "«Cargar ejemplo» usa el momento actual."
+      ],
+      "etiquetaLocal": "Local",
+      "etiquetaUtc": "UTC",
+      "etiquetaIso": "ISO 8601",
+      "etiquetaSegundos": "Unix (s)",
+      "etiquetaMilisegundos": "Unix (ms)",
+      "errores": {
+        "FECHA_INVALIDA": "No se reconoce la fecha. Usa un timestamp o el formato 2026-11-06T12:00:00."
+      }
+    },
+    "cron": {
+      "nombre": "Expresiones cron",
+      "descripcion": "Explica una expresión cron de 5 campos y calcula sus próximas ejecuciones.",
+      "uso": [
+        "Escribe los 5 campos: minuto, hora, día del mes, mes y día de la semana.",
+        "Por ejemplo, 0 9 * * 1-5 se ejecuta a las 9:00 de lunes a viernes.",
+        "Las fechas se muestran en tu zona horaria."
+      ],
+      "ejemplo": "0 9 * * 1-5",
+      "proximas": "Próximas 5 ejecuciones:",
+      "campos": {
+        "minuto": "Minuto",
+        "hora": "Hora",
+        "diaMes": "Día del mes",
+        "mes": "Mes",
+        "diaSemana": "Día de la semana",
+        "cualquiera": "cualquiera"
+      },
+      "errores": {
+        "CRON_CAMPOS": "Una expresión cron necesita 5 campos separados por espacios.",
+        "CRON_CAMPO": "El campo «{campo}» no es válido.",
+        "CRON_SIN_FECHAS": "Esta expresión no se ejecuta en los próximos 4 años."
+      }
+    },
+    "hash": {
+      "nombre": "Hash y checksum",
+      "descripcion": "Calcula hashes SHA de un texto o de un archivo.",
+      "uso": [
+        "Escribe un texto o abre un archivo y elige el algoritmo.",
+        "Compara el resultado con el valor publicado para comprobar que un archivo no cambió.",
+        "SHA-1 ya no se considera seguro; úsalo solo para compatibilidad."
+      ],
+      "ejemplo": "abc",
+      "opciones": {
+        "algoritmo": { "etiqueta": "Algoritmo", "SHA-256": "SHA-256", "SHA-384": "SHA-384", "SHA-512": "SHA-512", "SHA-1": "SHA-1" }
+      }
+    },
+    "generador-qr": {
+      "nombre": "Generador QR",
+      "descripcion": "Crea códigos QR a partir de texto o enlaces y descárgalos en PNG o SVG.",
+      "uso": [
+        "Escribe un texto o un enlace y el código se genera al instante.",
+        "Una corrección mayor tolera más daños, pero produce un código más denso.",
+        "Descarga en SVG si vas a imprimirlo a gran tamaño."
+      ],
+      "ejemplo": "https://navaja.dev",
+      "descripcionImagen": "Código QR generado",
+      "descargarPng": "Descargar PNG",
+      "descargarSvg": "Descargar SVG",
+      "opciones": {
+        "correccion": { "etiqueta": "Corrección de errores", "L": "Baja", "M": "Media", "Q": "Alta", "H": "Máxima" }
+      },
+      "errores": {
+        "QR_DEMASIADO_LARGO": "El texto es demasiado largo para un código QR con esta corrección."
+      }
+    },
+    "simulador-daltonismo": {
+      "nombre": "Simulador de daltonismo",
+      "descripcion": "Muestra una aproximación de cómo se ve una imagen con distintos tipos de daltonismo.",
+      "uso": [
+        "Carga una imagen y elige un tipo de visión.",
+        "Compara el original con la simulación, lado a lado.",
+        "Es una aproximación útil para revisar diseños y no sustituye las pruebas con personas."
+      ],
+      "etiquetaOriginal": "Original",
+      "etiquetaSimulacion": "Simulación",
+      "archivoSalida": "simulacion.png",
+      "opciones": {
+        "tipo": { "etiqueta": "Tipo de visión", "protanopia": "Protanopía", "deuteranopia": "Deuteranopía", "tritanopia": "Tritanopía", "acromatopsia": "Acromatopsia" }
+      },
+      "errores": {
+        "IMAGEN_INVALIDA": "El archivo no es una imagen compatible"
+      }
+    }
+  }
+}

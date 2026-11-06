@@ -1,0 +1,19 @@
+{
+  "categorias": ["formato", "codificacion", "tiempo", "generacion", "color"],
+  "herramientas": [
+    { "id": "formateador-json", "requerimiento": "DEV-01", "categoria": "formato", "perfil": ["dev"], "icono": "sangria", "palabrasClave": ["json", "formatear", "minificar", "validar", "indentar"], "plan": "gratis" },
+    { "id": "vista-previa-markdown", "requerimiento": "DEV-34", "categoria": "formato", "perfil": ["dev"], "icono": "documento", "palabrasClave": ["markdown", "md", "readme", "html"], "plan": "gratis" },
+    { "id": "base64", "requerimiento": "DEV-12", "categoria": "codificacion", "perfil": ["dev"], "icono": "intercambio", "palabrasClave": ["base64", "codificar", "decodificar", "texto", "utf-8"], "plan": "gratis" },
+    { "id": "base64-archivo", "requerimiento": "DEV-13", "categoria": "codificacion", "perfil": ["dev", "uxui"], "icono": "imagen", "palabrasClave": ["base64", "imagen", "data uri", "archivo"], "plan": "gratis" },
+    { "id": "codificador-url", "requerimiento": "DEV-14", "categoria": "codificacion", "perfil": ["dev"], "icono": "eslabon", "palabrasClave": ["url", "uri", "percent", "encode", "decode", "codificar"], "plan": "gratis" },
+    { "id": "escapar-cadenas", "requerimiento": "DEV-31", "categoria": "codificacion", "perfil": ["dev"], "icono": "diagonal", "palabrasClave": ["escapar", "desescapar", "html", "json", "javascript", "cadena"], "plan": "gratis" },
+    { "id": "jwt", "requerimiento": "DEV-16", "categoria": "codificacion", "perfil": ["dev"], "icono": "llave", "palabrasClave": ["jwt", "token", "decodificar", "autenticacion"], "sensible": true, "plan": "gratis" },
+    { "id": "gzip", "requerimiento": "DEV-17", "categoria": "codificacion", "perfil": ["dev"], "icono": "compresion", "palabrasClave": ["gzip", "comprimir", "descomprimir", "deflate"], "plan": "gratis" },
+    { "id": "comprobador-certificado", "requerimiento": "sin-id", "categoria": "codificacion", "perfil": ["dev"], "icono": "candado", "palabrasClave": ["certificado", "pem", "x509", "tls", "ssl"], "sensible": true, "plan": "gratis" },
+    { "id": "fecha-unix", "requerimiento": "DEV-08", "categoria": "tiempo", "perfil": ["dev"], "icono": "calendario", "palabrasClave": ["fecha", "timestamp", "unix", "iso", "hora"], "plan": "gratis" },
+    { "id": "cron", "requerimiento": "DEV-09", "categoria": "tiempo", "perfil": ["dev"], "icono": "reloj", "palabrasClave": ["cron", "crontab", "programar", "horario"], "plan": "gratis" },
+    { "id": "hash", "requerimiento": "DEV-20", "categoria": "generacion", "perfil": ["dev"], "icono": "almohadilla", "palabrasClave": ["hash", "checksum", "sha", "sha-256", "sha-512", "integridad"], "plan": "gratis" },
+    { "id": "generador-qr", "requerimiento": "DEV-18", "categoria": "generacion", "perfil": ["dev", "uxui", "grafico"], "icono": "qr", "palabrasClave": ["qr", "codigo", "enlace", "url", "svg", "png"], "plan": "gratis" },
+    { "id": "simulador-daltonismo", "requerimiento": "DIS-07", "categoria": "color", "perfil": ["uxui", "grafico"], "icono": "circulos", "palabrasClave": ["daltonismo", "color", "accesibilidad", "protanopia", "deuteranopia", "tritanopia"], "plan": "gratis" }
+  ]
+}

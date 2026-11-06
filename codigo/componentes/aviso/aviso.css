@@ -1,0 +1,28 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+.aviso {
+  position: fixed;
+  left: 50%;
+  bottom: var(--espacio-5);
+  z-index: 40;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100vw - 3.2rem);
+  display: grid;
+  gap: var(--espacio-2);
+}
+
+.aviso__mensaje {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-3);
+  padding: var(--espacio-1) var(--espacio-1) var(--espacio-1) var(--espacio-4);
+  background: var(--color-resultado-fondo);
+  color: var(--color-resultado-texto);
+  border-radius: var(--radio-panel);
+  box-shadow: var(--sombra-flotante);
+  font-size: var(--texto-pequeno);
+}
+
+.aviso__mensaje--error {
+  outline: 0.2rem solid var(--color-error);
+}

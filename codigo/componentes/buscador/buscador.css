@@ -1,0 +1,138 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+/* La pieza central: un buscador con forma de navaja abierta. */
+.buscador {
+  --alto-navaja: 6.4rem;
+  --punta: 2.4rem;
+  --ancho-cacha: 5rem;
+
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: var(--alto-navaja);
+}
+
+.buscador__cacha {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: var(--ancho-cacha);
+  background: var(--color-cacha);
+  color: var(--color-cacha-texto);
+  border-radius: var(--radio-cacha) 0 0 var(--radio-cacha);
+}
+
+.buscador__cacha .icono__remache {
+  fill: var(--color-remache);
+}
+
+.buscador__virola {
+  position: relative;
+  z-index: 1;
+  flex: none;
+  width: 0.6rem;
+  background: var(--color-remache);
+}
+
+/* Capa exterior: dibuja el filo y cambia de color con el foco. */
+.buscador__hoja {
+  flex: 1;
+  min-width: 0;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  background: var(--color-filo);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--punta)) 100%, 0 100%);
+  transition: background-color var(--duracion-breve), padding var(--duracion-breve);
+}
+
+.buscador__hoja:focus-within {
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  background: var(--color-foco);
+}
+
+.buscador__acero {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-hoja) 84%, var(--color-hoja-bisel) 84%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--punta)) 100%, 0 100%);
+}
+
+.buscador__campo {
+  width: 100%;
+  height: 100%;
+  padding: 0 calc(var(--punta) + var(--espacio-2)) 0.6rem var(--espacio-3);
+  border: 0;
+  background: transparent;
+  color: var(--color-hoja-texto);
+  font-size: var(--texto-normal);
+  outline: none;
+  appearance: none;
+}
+
+.buscador__campo::placeholder {
+  color: var(--color-hoja-ayuda);
+  opacity: 1;
+}
+
+.buscador__campo::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.buscador__atajo {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: calc(var(--punta) + var(--espacio-5));
+  transform: translateY(-58%);
+  padding: 0.2rem var(--espacio-2);
+  border: 1px solid var(--color-filo);
+  border-radius: var(--radio-control);
+  color: var(--color-hoja-ayuda);
+  font-size: 1.3rem;
+  pointer-events: none;
+}
+
+.buscador--desplegar .buscador__hoja {
+  transform-origin: 0 50%;
+  animation: buscador-desplegar 620ms var(--curva-despliegue) both;
+}
+
+@keyframes buscador-desplegar {
+  from {
+    transform: rotate(-9deg) scaleX(0.06);
+    opacity: 0;
+  }
+
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 48em) {
+  .buscador {
+    --alto-navaja: 8.8rem;
+    --punta: 8rem;
+    --ancho-cacha: 10.4rem;
+  }
+
+  .buscador__cacha .icono {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .buscador__virola {
+    width: 0.9rem;
+  }
+
+  .buscador__campo {
+    padding-left: var(--espacio-5);
+    padding-right: calc(var(--punta) + 11rem);
+    font-size: 2.4rem;
+  }
+
+  .buscador__atajo {
+    display: block;
+  }
+}
